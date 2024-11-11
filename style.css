@@ -1,0 +1,50 @@
+body{
+    background-color: peru;
+}
+
+form{
+    /* background-color: aquamarine; */
+}
+
+
+
+form{
+    display: grid;
+    width: 40%;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.submit, .reset{
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 40%;
+}
+
+
+/* VALIDATION------ */
+
+#email:invalid, #country:invalid, #zipcode:invalid, #password:invalid, #confirm:invalid{
+    background-color: #fdd;
+}
+
+#email:focus:invalid, #country:focus:invalid, #zipcode:focus:invalid, #password:focus:invalid, #confirm:focus:invalid{
+    background-color: none;
+}
+
+.error-msg{
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error-msg.active{
+    padding: 0.3em;
+}
